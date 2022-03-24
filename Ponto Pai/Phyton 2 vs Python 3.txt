@@ -1,0 +1,30 @@
+"""Python 2 vs. Python 3
+Python 2 vs. Python 3
+Não muda muita coisa na prática. Python 3 possui melhor performance. Quanto a sintaxe, destaco apenas dois pontos:
+
+1) Comando print( )
+Ao executar o print, em Python 3, os parênteses passam a ser obrigatórios:"""
+
+# Python 2
+print "Olá mundo"
+
+# Python 3
+print("Olá mundo")
+
+
+"""2) Comando input( )
+Em Python 2 há duas variações do comando input:"""
+
+raw_input( ) #strings
+input( ) # valores numéricos
+# Em python 3, deve-se usar apenas input( ) para strings, e para números deve-se combinar com as funções float ou int. Veja:
+
+# Recebendo textos
+meu_texto = input("Digite um texto: ")
+
+# Recebendo números
+numero_inteiro = int(input("Digite um numero inteiro: "))
+numero_decimal = float(input("Digite um numero decimal: "))
+
+
+# Atenção: a plataforma da Udemy e o Sublime Text não aceitam o comando input( ), e você receberá uma mensagem como "EOFError: EOF when reading a line". Esse comando só funciona no terminal/cmd. Para realizar os exercícios na Udemy, apenas insira o valor diretamente na variável.
